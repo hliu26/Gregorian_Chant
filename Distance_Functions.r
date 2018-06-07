@@ -50,7 +50,7 @@ euclidMatrix <- function(data){
 
     for (j in 2:num_loc){
         for(k in 2:num_loc){
-            for(i in 1:121){
+            for(i in 1:nrow(data)){
                 if (j == k){
                     sumSquare = 0
                 } else if (is.na(data[,j][i]) | is.na(data[,k][i])){
